@@ -1,0 +1,9 @@
+.background{
+    background-color: #1A202C;
+    height: 100%;
+}
+
+.poke-card{
+    background-color: #1A202C;
+    border: 1px solid white;
+}
