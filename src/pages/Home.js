@@ -27,7 +27,7 @@ function Home() {
     return (
         <div className="background">
 
-            <div className="container pt-4 pb-4">
+            <div className="container mt-4 mb-4">
 
                 {pokemon === null ? 
                 <p>There is no pokemon</p> :
@@ -54,7 +54,7 @@ function Home() {
                         </div>
 
                         <div className="d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-light text-white" onClick={handleRandomPokeClick}>Show random pokemon</button>
+                            <button type="button" class="btn btn-outline-light" onClick={handleRandomPokeClick}>Show random pokemon</button>
                         </div>
 
                     </div>

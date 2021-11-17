@@ -1,0 +1,25 @@
+body{
+    background-color: #1A202C;
+    color: white;
+}
+
+.form-border{
+    border: 0.5px solid white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.input-bg{
+    background-color: #1A202C;
+    border: 0.5px solid gray !important;
+    font-style: italic;
+}
+
+.login-btn{
+    background-color: #FFCD00;
+    color: #1A202C;
+}
+
+.login-btn:hover{
+    background-color: #ceab1c;
+}
