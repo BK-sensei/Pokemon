@@ -19,7 +19,6 @@ const Login = () => {
             .min(5, "Password must contain a minimum of 5 characters")
             .required("Password is required")
         }),
-        validateOnChange: false
     })
     
 
@@ -32,7 +31,7 @@ const Login = () => {
                 <div className="col-lg-5 col-sm-4">
 
                     {/* Formulaire */}
-                    <form className="form-border">
+                    <form className="form-border" onClick={formik.handleSubmit}>
 
                         {/* Username Input */}
                         <div class="mb-3 pt-3">
