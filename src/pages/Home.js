@@ -40,7 +40,7 @@ function Home() {
                             <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`} className="card-img-top" alt="Pokemon" />
                             <div className="card-body">
                                 <h3 className="card-title text-center fw-bold text-white">{pokemon.name}</h3>
-                                <p className="card-text text-white"><span className="fw-bold">Height :</span>{pokemon.height}</p>
+                                <p className="card-text text-white"><span className="fw-bold">Height :</span> {pokemon.height}</p>
                                 <p className="card-text text-white"><span className="fw-bold">Weight :</span> {pokemon.weight}</p>
                                 <p className="card-text text-white fw-bold">Types :</p>
                                 {pokemon.types.map(type => (
