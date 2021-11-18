@@ -13,11 +13,12 @@ const Login = () => {
         console.log(values)
       },
       validationSchema: Yup.object().shape({
-        username: Yup.string()
-            .required("Username is required"),
+          username: Yup.string()
+            .required("Username is required")
+            .max(15, "Username is too long"),
         password: Yup.string()
-            .min(5, "Password must contain a minimum of 5 characters")
             .required("Password is required")
+            .min(6, "Password must contain a minimum of 6 characters")
         }),
     })
     
@@ -44,7 +45,7 @@ const Login = () => {
                                 value={formik.values.username}
                                 onChange={formik.handleChange}
                             />
-                            {formik.errors.username && <p>{formik.errors.username}</p>}
+                            {formik.errors.username && <p className="error">{formik.errors.username}</p>}
                         </div>
 
                         {/* Password Input */}
@@ -58,7 +59,7 @@ const Login = () => {
                                 value={formik.values.password}
                                 onChange={formik.handleChange}
                             />
-                            {formik.errors.password && <p>{formik.errors.password}</p>}
+                            {formik.errors.password && <p className="error">{formik.errors.password}</p>}
                         </div>
                         
                         {/* Button Submit */}
